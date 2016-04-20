@@ -113,9 +113,10 @@ function main() {
         { id: 1, name: 'Item 1', desc: 'This is item 1' },
         { id: 2, name: 'Item 2', desc: 'This is item 2' },
         { id: 3, name: 'Item 3', desc: 'This is item 3' }
-    ]
-    
-
+    ];
+    for (prop in items){
+          outputLine (items [prop].id + "" +items [prop].name + "" +items[prop].desc);
+    }
     // Exercise #9
     // Now, apply the same method in exercise 8 to this array, so that you have an OBJECT, then proceed to output the name and desc of each item using the provided function
     var items = [
